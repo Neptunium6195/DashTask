@@ -1,46 +1,22 @@
-@font-face {
-    font-family: "Starborn";
-    src: url("./fonts/starborn/Starborn.ttf");
-  }
-
-body {
-  background-color:#4A5759;
-}
-
-h1 {
-  font-family: "Starborn", sans-serif;
-  font-size: 80px;
-  color: #EDAFB8;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-
-@font-face {
-  font-family: "Winkle";
-  src: url("./fonts/winkle/winkle.ttf");
-}
+<button class="button-56" role="button">Button 56</button>
 
 /* CSS */
 .button-56 {
   align-items: center;
-  background-color: #EDAFB8;
-  border: 2px solid #F7E1D7;
-  border-radius: 24px;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
   box-sizing: border-box;
-  color: #F7E1D7;
+  color: #111;
   cursor: pointer;
   display: flex;
-  font-family: "Winkle",sans-serif;
-  font-size: 60px;
-  height: 100px;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
   justify-content: center;
-  line-height: 80px;
-  max-width: 300px;
-  padding: 0 50px;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -50,11 +26,11 @@ p {
 }
 
 .button-56:after {
-  background-color: #003803;
-  border-radius: 20px;
+  background-color: #111;
+  border-radius: 8px;
   content: "";
   display: block;
-  height: 100px;
+  height: 48px;
   left: 0;
   width: 100%;
   position: absolute;
@@ -74,8 +50,6 @@ p {
 }
 
 .button-56:hover {
-  background-color: #F7E1D7;
-  color: #EDAFB8;
   outline: 0;
 }
 

@@ -1,9 +1,8 @@
 function user() {
     let user = prompt("what shall I call you?");
     if (user) {
-        document.getElementById("greeting").innerHTML = `Hello, ${user}!`;
+        document.getElementById("greeting").innerHTML = `What's up, ${user}!`;
+        document.getElementById("start-button").style.display = "none";
+        document.getElementById("greeting").style.fontSize = "35px";
     }
-}
-function change() {
-    document.getElementById("victim").innerHTML = "java has won";
 }
