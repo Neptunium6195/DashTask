@@ -1,12 +1,18 @@
 function user() {
-    let user = prompt("what shall I call you?");
+  let user = localStorage.getItem("user");
+  if (!user) {
+    user = prompt("what shall I call you?");
     if (user) {
-        document.getElementById("greeting").innerHTML = `What's up, ${user}!`;
-        document.getElementById("start-button").style.display = "none";
-        document.getElementById("greeting").style.fontSize = "35px";
-        document.getElementById("motivationImg").style.display= "block";
-        document.getElementById("stickyNotes").style.display = "block";
+      localStorage.setItem("user", user);
     }
+  }
+  if (user) {
+      document.getElementById("greeting").innerHTML = `What's up, ${user}!`;
+      document.getElementById("start-button").style.display = "none";
+      document.getElementById("greeting").style.fontSize = "35px";
+      document.getElementById("motivationImg").style.display= "block";
+      document.getElementById("stickyNotes").style.display = "block";
+  }
 }
 function hideElements() {
     /*document.getElementById("greeting").style.display = "none";
