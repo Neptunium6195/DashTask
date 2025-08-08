@@ -23,3 +23,17 @@ function stickyNote() {
     document.getElementById("stickyNoteGroup").style.display = "flex";
     document.getElementById("closeImg").style.display = "block";
 }
+function savedNote() {
+  const noteBox = document.getElementById("noteBox");
+
+  const saved = localStorage.getItem("myNote");
+  if (saved) {
+    noteBox.value = saved;
+  }
+
+  noteBox.addEventListener("input", function () {
+    localStorage.setItem("myNote", noteBox.value);
+  });
+}
+
+window.addEventListener("DOMContentLoaded", savedNote);
