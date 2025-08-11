@@ -10,15 +10,10 @@ function user() {
       document.getElementById("greeting").innerHTML = `What's up, ${user}!`;
       document.getElementById("start-button").style.display = "none";
       document.getElementById("greeting").style.fontSize = "35px";
-      document.getElementById("motivationImg").style.display= "block";
-      document.getElementById("stickyNotes").style.display = "block";
+      document.getElementById("mainGroup").style.display = "flex";
   }
 }
 function hideElements() {
-    /*document.getElementById("greeting").style.display = "none";
-    document.getElementById("start-button").style.display = "none";
-    document.getElementById("motivationImg").style.display = "none";
-    document.getElementById("stickyNotes").style.display = "none";*/
     document.getElementById("mainGroup").style.display = "none";
 }
 function hideWidgets() {
@@ -41,5 +36,16 @@ function savedNote() {
     localStorage.setItem("myNote", noteBox.value);
   });
 }
+function goals() {}
 
+function saveGoals() {
+  const goalBox = document.getElementById("goalBox");
+  const savedGoals = localStorage.getItem("myGoals");
+  if (savedGoals) {
+    goalBox.value = savedGoals;
+  }
+  goalBox.addEventListener("input", function () {
+    localStorage.setItem("myGoals", goalBox.value);
+  });
+}
 window.addEventListener("DOMContentLoaded", savedNote);
