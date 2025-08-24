@@ -165,7 +165,7 @@ p {
 /*Goals*/
 .goal-container {
   position: relative;
-  width: 45%; 
+  margin-left: 0%;
   height: 50%;
   display: block;
 }
