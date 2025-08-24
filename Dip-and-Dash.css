@@ -24,6 +24,7 @@ p {
   src: url("./fonts/winkle/winkle.ttf");
 }
 
+/*Credits to Squareshot, Dribble, and CSS Scan*/
 .button-56 {
   align-items: center;
   background-color: #EDAFB8;
@@ -84,6 +85,39 @@ p {
   }
 }
 
+.button-1 {
+  background-color: #edafb8;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  width: 115%;
+  height: 15%;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #f7e1d7;
+}
+
 /*Sticky Notes*/
 .note-container {
     position: relative;
@@ -127,29 +161,31 @@ p {
     font-size: 16px;
     resize: none;
   }
+
 /*Goals*/
 .goal-container {
   position: relative;
-  width: 600px; 
-  height: 600px;
+  width: 45%; 
+  height: 50%;
   display: block;
 }
 .goal-cont-Img {
-  width: 50%;
-  height: 50%;
+  width: 35%;
+  height: 0%;
   display: block;
 }
 .goal-textbox {
   position: absolute;
-  top: 27%; 
-  left: 12%;
-  width: 72%;
-  height: 64%;
+  top: 24.5%; 
+  left: 65.5%;
+  width: 14.1%;
+  height: 23%;
   resize: none;
-  border: 1px solid #ccc;
-  padding: 10px;
-  font-size: 22px;
-  line-height: 2;
+  background-color: rgba(222, 219, 210, 0.5);
+  border: 0.1px solid #ffffff;
+  padding: 8px;
+  font-size: 18px;
+  line-height: 1.82;
 }
 .textArea {
   width:300px;
@@ -157,4 +193,10 @@ p {
   padding: 10px;
   font-size: 16px;
   resize: none;
+}
+
+.dividers {
+  padding: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
 }

@@ -27,19 +27,19 @@ function stickyNote() {
 function savedNote() {
   const noteBox = document.getElementById("noteBox");
 
-  const saved = localStorage.getItem("myNote");
-  if (saved) {
-    noteBox.value = saved;
+  const savedNote = localStorage.getItem("myNote");
+  if (savedNote) {
+    noteBox.value = savedNote;
   }
 
   noteBox.addEventListener("input", function () {
     localStorage.setItem("myNote", noteBox.value);
   });
 }
-function goals() {}
 
 function saveGoals() {
   const goalBox = document.getElementById("goalBox");
+
   const savedGoals = localStorage.getItem("myGoals");
   if (savedGoals) {
     goalBox.value = savedGoals;
@@ -48,4 +48,9 @@ function saveGoals() {
     localStorage.setItem("myGoals", goalBox.value);
   });
 }
+
+function generateQuote() {
+  document.getElementById("generatedQuote").innerHTML = "hello"
+}
+window.addEventListener("DOMContentLoaded", saveGoals);
 window.addEventListener("DOMContentLoaded", savedNote);
