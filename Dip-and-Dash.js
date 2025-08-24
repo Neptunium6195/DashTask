@@ -1,3 +1,7 @@
+var quoteTxt = 'quotes.txt';
+const quotes = [];
+quotes.length = 0;
+
 function user() {
   let user = localStorage.getItem("user");
   if (!user) {
@@ -49,8 +53,24 @@ function saveGoals() {
   });
 }
 
-function generateQuote() {
-  document.getElementById("generatedQuote").innerHTML = "hello"
+async function fetchQuote() {
+  const opened = await fetch(quoteTxt);
+  const Text = await opened.text();
+  const lines = Text.split('\n');
+  quotes.length = 0;
+  for (let line = 0; line < lines.length ; line++) {
+    quotes.push(lines[line]);
+  }
+  console.log("Quotes loaded:", quotes); // Add this line
 }
+
+async function generateQuote() {
+  if (quotes.length === 0) {
+    await fetchQuote();
+  }
+  const index = Math.floor(Math.random() * quotes.length);
+  document.getElementById("generatedQuote").innerHTML = quotes[index];
+}
+
 window.addEventListener("DOMContentLoaded", saveGoals);
 window.addEventListener("DOMContentLoaded", savedNote);
