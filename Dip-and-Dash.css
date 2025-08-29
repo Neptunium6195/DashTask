@@ -163,6 +163,7 @@ p {
   }
 
 /*Goals*/
+
 .goal-container {
   position: relative;
   left: 0%;
@@ -182,8 +183,8 @@ p {
   background-color: rgba(222, 219, 210, 0.5);
   border: 0.1px solid #ffffff;
   padding: 8px;
-  font-size: 18px;
-  line-height: 2.1;
+  font-size: clamp(1rem, 1vw, 1.4rem);
+  line-height: clamp(1.8rem, 2vw, 2.3rem);
 }
 
 
