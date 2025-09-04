@@ -10,30 +10,39 @@
 
 <h1 id="greeting">Hello, please click the <br> start button:</h1>
 <div style="display: flex; justify-content: center; align-items: center; height: 20%;">
-<button id="start-button" class="button-56" role="button" margin='center' onclick="user()">Start</button>
+    <button id="start-button" class="button-56" role="button" margin='center' onclick="user()">Start</button>
 </div>
 
-<div id="mainGroup" style="display: none; justify-content: center; align-items: center; height: 100%; margin-top: 1%; margin-left: 3%; margin-right: 3%">
-    <img id ="motivationImg" src="./images/motivationBoard.png" alt="Motivation Board:" style="display: block; height: 15%; width:15%; margin-bottom: 1%; margin-right: 1%; border: 4px solid #dedbd2;">
-    <img id="stickyNotes" src="./images/stickyNote.png" alt="Sticky Notes" style="display: block; height: 20%; width:20%; margin-top: .01%; margin-left: 1%; margin-right: 1%;" onclick="stickyNote(); hideElements()"></img>
-    <div id="quoteGroup" class="dividers" style="display:flex; flex-direction:column; justify-content: center; align-items: center; height: 15%; margin-top: 0%; width: 10%; margin-left: 7%">
-        <div id="textbg" style="background: #b0c4b1; display:flex; justify-content: center; align-items: center; height: 100%; margin-top: 0%; width: 330px; margin-left: 0%">
+<div id="mainGroup" style="display: none; flex-wrap: wrap; justify-content: center; align-items: flex-start; max-width: 100vw; overflow-x: auto; height: auto; margin-top: 1%; margin-left: 6%; margin-right: 0%">
+    <img id ="motivationImg" src="./images/motivationBoard2.jpg" alt="Motivation Board:" style="display: block; height: auto; max-width:15vw; margin-bottom: 1%; margin-right: 1%; border: 4px solid #dedbd2;">
+    <!--<img id="stickyNotes" src="./images/stickyNote.png" alt="Sticky Notes" style="display: block; height: 20%; width:20%; margin-top: .01%; margin-left: 1%; margin-right: 1%;" onclick="stickyNote(); hideElements()"></img>-->
+    
+    <div id="goals" style="margin-left: 2%; display: flex; justify-content: center; align-items: center; max-width: 100%; height: 100%; margin-top: 1%; margin-right: 1%">
+        <!--<img id="goalImg" class="goal-cont-Img" src="./images/Goals.png" style="display: block; height: auto; max-width: 20vw"></img> --><!--height: 15%; width:15%; margin-bottom: 1%; margin-right: 1%-->
+        <!--<textarea id="goalBox" class="goal-textbox" style="display: block" rows="10" cols="30" placeholder="Write your goals here..."></textarea>-->
+        <ul id="goalList" class="goal-container" readonly>
+            <li><input type="checkbox"><input id="goal-list-textbox-1" class="goal-list-textbox" type="text" placeholder="Type your goal here..." /></li>
+            <li><input type="checkbox"><input id="goal-list-textbox-2" class="goal-list-textbox" type="text" placeholder="Type your goal here..." /></li>
+            <li><input type="checkbox"><input id="goal-list-textbox-3" class="goal-list-textbox" type="text" placeholder="Type your goal here..." /></li>
+            <li><input type="checkbox"><input id="goal-list-textbox-4" class="goal-list-textbox" type="text" placeholder="Type your goal here..." /></li>
+            <li><input type="checkbox"><input id="goal-list-textbox-5" class="goal-list-textbox" type="text" placeholder="Type your goal here..." /></li>
+            <li><input type="checkbox"><input id="goal-list-textbox-6" class="goal-list-textbox" type="text" placeholder="Type your goal here..." /></li>
+        </ul>
+    </div>
+    <div id="stickyNoteGroup" style="display: flex; justify-content: center; align-items: center; height: auto; max-width:100%; margin-top: 1%; margin-left: 3%">
+        <div class="note-container">
+            <img id="stickyNoteImg2" class="note-cont-Img" src="./images/stickyNotes2.png" style="max-width: 100%; height: auto"></img>
+            <textarea id="noteBox" class="note-textbox" placeholder="Write your note here..."></textarea>
+            <!--<img id="closeImg" src="./images/closeButton.png" class="close-btn" onclick="hideWidgets()" style="height:20%; width: 20%;"></img>-->
+        </div>
+    </div>
+    <div id="quoteGroup" class="dividers" style="display:flex; flex-direction:column; justify-content: center; align-items: center; height: auto; max-width:100%; margin-top: 0%; width: 10%; margin-left: 9%; margin-right: 10%">
+        <div id="textbg" style="background: #b0c4b1; display:flex; justify-content: center; align-items: center; height: auto; margin-top: 0%; width: 330px; margin-left: 0%">
             <h3 id="generatedQuote" style="text-align: center; font-size: 24px; color: #FFFFFF; font-family: Helvetica Neue; width: 90%">Click the button below!</h3>
         </div>
         <button id="generateQuoteButton" style="margin-top: 5%" class="button-1" onclick="generateQuote()">Generate Quote</button>
     </div>
-    <div class="dividers" id="goals" style="display: flex; justify-content: center; align-items: center; height: 100%; margin-top: 1%;">
-        <img id="goalImg" class="goal-cont-Img" src="./images/Goals.png" style="display: block; height: 80%"></img> <!--height: 15%; width:15%; margin-bottom: 1%; margin-right: 1%-->
-        <textarea id="goalBox" class="goal-textbox" style="display: block" rows="10" cols="30" placeholder="Write your goals here..."></textarea>
-    </div>
 
-</div>
-<div id="stickyNoteGroup" style="display: none; justify-content: center; align-items: center; height: 100%; margin-top: 1%;">
-    <div class="note-container">
-        <img id="stickyNoteImg2" class="note-cont-Img" src="./images/stickyNotes2.png"></img>
-        <textarea id="noteBox" class="note-textbox" rows="10" cols="30" placeholder="Write your note here..."></textarea>
-        <img id="closeImg" src="./images/closeButton.png" class="close-btn" onclick="hideWidgets()" style="height:20%; width: 20%;"></img>
-    </div>
 </div>
 
 </body>

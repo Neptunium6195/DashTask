@@ -165,64 +165,118 @@ p {
 
 .goal-container {
   position: relative;
+  left: 0%;
   display: flex;
-  flex-direction:column;
-  align-items: center;
-  gap: 1rem;
-  width: 120%;
-  margin-left: 2%;
+}
+.goal-cont-Img {
+  max-width:600%;
   height: auto;
-  padding-top: 5vw;
-}
-#goals {
   display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  justify-content: center;
-  background-image: url('./images/Goals.png');
-  width: 20%;
+}
+.goal-textbox {
+  position: absolute;
+  top: clamp(10%, 22.4%, 28%);
+  width: 17%;
   height: auto;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-/*#goalList {
-  list-style-type: none;
-  gap: none;
-  margin-bottom: 0.0rem;
-  margin-top: 0.0rem;
-  line-height: 1;
-  margin-left: 2%;
-  padding: 0;
-}
-#goalList input[type="checkbox"] {
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0;
-  margin-left: 0%
-}*/
-#goalList li {
-  gap:none;
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-#goalList ul {
-  gap: none;
-}
-.goal-list-textbox {
-  gap:none;
-  flex: 1;
-  width: 75%;
   resize: none;
   background-color: rgba(222, 219, 210, 0.0);
   border: 0.0px solid #ffffff;
-  padding: 0px;
-  line-height: 0;
+  padding: 8px;
+  line-height:  clamp(1.5rem, 22%, 3rem);
   list-style-type: none;
-  font-size: clamp(.5rem, 1vw, 1rem);
-  height: 0rem;
+  margin-left: 0%;
 }
+.goal-list-textbox-1 {
+  position: absolute;
+  top: 5%;
+  width: 84%;
+  height: auto;
+  resize: none;
+  background-color: rgba(222, 219, 210, 0.5);
+  border: 0.0px solid #ffffff;
+  padding: 8px;
+  font-size: clamp(.8rem, 1.6rem, 1.6rem);
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 1%;
+  margin-bottom: 0;
+}
+.goal-list-textbox-2 {
+  position: absolute;
+  top: 21%;
+  width: 84%;
+  height: auto;
+  resize: none;
+  background-color: rgba(222, 219, 210, 0.5);
+  border: 0.0px solid #ffffff;
+  padding: 8px;
+  font-size: clamp(.8rem, 1.6rem, 1.6rem);
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 1%;
+  margin-bottom: 0;
+}
+.goal-list-textbox-3 {
+  position: absolute;
+  top: 37%;
+  width: 84%;
+  height: auto;
+  resize: none;
+  background-color: rgba(222, 219, 210, 0.5);
+  border: 0.0px solid #ffffff;
+  padding: 8px;
+  font-size: clamp(.8rem, 1.6rem, 1.6rem);
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 1%;
+  margin-bottom: 0;
+}
+.goal-list-textbox-4 {
+  position: absolute;
+  top: 53%;
+  width: 84%;
+  height: auto;
+  resize: none;
+  background-color: rgba(222, 219, 210, 0.5);
+  border: 0.0px solid #ffffff;
+  padding: 8px;
+  font-size: clamp(.8rem, 1.6rem, 1.6rem);
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 1%;
+  margin-bottom: 0;
+}
+.goal-list-textbox-5 {
+  position: absolute;
+  top: 68.5%;
+  width: 84%;
+  height: auto;
+  resize: none;
+  background-color: rgba(222, 219, 210, 0.5);
+  border: 0.0px solid #ffffff;
+  padding: 8px;
+  font-size: clamp(.8rem, 1.6rem, 1.6rem);
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 1%;
+  margin-bottom: 0;
+}
+.goal-list-textbox-6 {
+  position: absolute;
+  top: 84%;
+  width: 84%;
+  height: auto;
+  resize: none;
+  background-color: rgba(222, 219, 210, 0.5);
+  border: 0.0px solid #ffffff;
+  padding: 8px;
+  font-size: clamp(.8rem, 1.6rem, 1.6rem);
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 1%;
+  margin-bottom: 0;
+}
+
 
 /* color pallete:
 #edafb8

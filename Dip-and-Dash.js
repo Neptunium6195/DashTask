@@ -30,7 +30,6 @@ function stickyNote() {
 }
 function savedNote() {
   const noteBox = document.getElementById("noteBox");
-
   const savedNote = localStorage.getItem("myNote");
   if (savedNote) {
     noteBox.value = savedNote;
@@ -41,18 +40,66 @@ function savedNote() {
   });
 }
 
-function saveGoals() {
-  const goalBox = document.getElementById("goalBox");
-
-  const savedGoals = localStorage.getItem("myGoals");
-  if (savedGoals) {
-    goalBox.value = savedGoals;
+function goalBox1() {
+  const goaltextBox1 = document.getElementById("goal-list-textbox-1");
+  const savedGoals1 = localStorage.getItem("myGoals1");
+  if (savedGoals1) {
+    goaltextBox1.value = savedGoals1;
   }
-  goalBox.addEventListener("input", function () {
-    localStorage.setItem("myGoals", goalBox.value);
+  goaltextBox1.addEventListener("input", function () {
+  localStorage.setItem("myGoals1", goaltextBox1.value);
   });
 }
-
+function goalBox2() {
+  const goaltextBox2 = document.getElementById("goal-list-textbox-2");
+  const savedGoals2 = localStorage.getItem("myGoals2");
+  if (savedGoals2) {
+    goaltextBox2.value = savedGoals2;
+  }
+  goaltextBox2.addEventListener("input", function () {
+  localStorage.setItem("myGoals2", goaltextBox2.value);
+  });
+}
+function goalBox3() {
+  const goaltextBox3 = document.getElementById("goal-list-textbox-3");
+  const savedGoals3 = localStorage.getItem("myGoals3");
+  if (savedGoals3) {
+    goaltextBox3.value = savedGoals3;
+  }
+  goaltextBox3.addEventListener("input", function () {
+  localStorage.setItem("myGoals3", goaltextBox3.value);
+  });
+}
+function goalBox4() {
+  const goaltextBox4 = document.getElementById("goal-list-textbox-4");
+  const savedGoals4 = localStorage.getItem("myGoals4");
+  if (savedGoals4) {
+    goaltextBox4.value = savedGoals4;
+  }
+  goaltextBox4.addEventListener("input", function () {
+  localStorage.setItem("myGoals4", goaltextBox4.value);
+  });
+}
+function goalBox5() {
+  const goaltextBox5 = document.getElementById("goal-list-textbox-5");
+  const savedGoals5 = localStorage.getItem("myGoals5");
+  if (savedGoals5) {
+    goaltextBox5.value = savedGoals5;
+  }
+  goaltextBox5.addEventListener("input", function () {
+  localStorage.setItem("myGoals5", goaltextBox5.value);
+  });
+}
+function goalBox6() {
+  const goaltextBox6 = document.getElementById("goal-list-textbox-6");
+  const savedGoals6 = localStorage.getItem("myGoals6");
+  if (savedGoals6) {
+    goaltextBox6.value = savedGoals6;
+  }
+  goaltextBox6.addEventListener("input", function () {
+  localStorage.setItem("myGoals6", goaltextBox6.value);
+  });
+}
 async function fetchQuote() {
   const opened = await fetch(quoteTxt);
   const Text = await opened.text();
@@ -72,5 +119,10 @@ async function generateQuote() {
   document.getElementById("generatedQuote").innerHTML = quotes[index];
 }
 
-window.addEventListener("DOMContentLoaded", saveGoals);
 window.addEventListener("DOMContentLoaded", savedNote);
+window.addEventListener("DOMContentLoaded", goalBox1);
+window.addEventListener("DOMContentLoaded", goalBox2);
+window.addEventListener("DOMContentLoaded", goalBox3);
+window.addEventListener("DOMContentLoaded", goalBox4);
+window.addEventListener("DOMContentLoaded", goalBox5);
+window.addEventListener("DOMContentLoaded", goalBox6);
