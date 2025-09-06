@@ -5,6 +5,9 @@
 
 body {
   background-color:#4A5759;
+  background-image: url('./images/Untitled_Artwork.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {

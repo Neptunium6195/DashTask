@@ -11,10 +11,13 @@ function user() {
     }
   }
   if (user) {
-      document.getElementById("greeting").innerHTML = `What's up, ${user}!`;
-      document.getElementById("start-button").style.display = "none";
-      document.getElementById("greeting").style.fontSize = "35px";
-      document.getElementById("mainGroup").style.display = "flex";
+    document.getElementById("greeting").innerHTML = `What's up, ${user}!`;
+    document.getElementById("start-button").style.display = "none";
+    document.getElementById("greeting").style.fontSize = "35px";
+    document.getElementById("greeting").style.width = "30%";
+    document.getElementById("mainGroup").style.display = "flex";
+    body.style.backgroundColor = '#4A5759';
+    body.style.backgroundImage = 'none';
   }
 }
 function hideElements() {
